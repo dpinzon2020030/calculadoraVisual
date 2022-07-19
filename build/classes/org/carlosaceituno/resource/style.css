@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/04/2021, 10:44:50
+    Author     : Carlo Josué Levy Aceituno Pocasangre.
+*/
+
+#ventanaPrincipal{
+    -fx-background-color: #0a0a0a;
+}
+.operadores{
+    -fx-font-size: 12px;  
+}
+.operadores:hover{
+    -fx-font-size: 20px; 
+}
+#btnLimpiar{
+    -fx-font-size: 12px;
+}
+
+#btnLimpiar:hover{
+    -fx-font-size: 20px;
+    -fx-text-fill: red; 
+}
+

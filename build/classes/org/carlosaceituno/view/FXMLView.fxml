@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ventanaPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="247.0" stylesheets="@../resource/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.carlosaceituno.controller.FXMLController">
+   <children>
+      <Label fx:id="lblPantalla" alignment="CENTER_RIGHT" layoutX="5.0" layoutY="32.0" prefHeight="83.0" prefWidth="237.0" style="-fx-background-color: #D7D7D7;" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="3.0" layoutY="126.0" prefHeight="246.0" prefWidth="235.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="btnLimpiar" fx:id="btnLimpiar" mnemonicParsing="false" onAction="#clicLimpiar" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: blue;" stylesheets="@../resource/style.css" text="AC" textFill="WHITE">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnSigno" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#clicSigno" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: blue;" styleClass="operadores" stylesheets="@../resource/style.css" text="+/-" textFill="WHITE" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn7" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#clicSiete" prefHeight="50.0" prefWidth="60.0" text="7" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn4" layoutX="10.0" layoutY="52.0" mnemonicParsing="false" onAction="#clicCuatro" prefHeight="50.0" prefWidth="60.0" text="4" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn1" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" onAction="#clicUno" prefHeight="50.0" prefWidth="60.0" text="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn8" layoutX="63.0" layoutY="11.0" mnemonicParsing="false" onAction="#clicOcho" prefHeight="50.0" prefWidth="60.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn5" layoutX="63.0" layoutY="52.0" mnemonicParsing="false" onAction="#clicCinco" prefHeight="50.0" prefWidth="60.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn2" layoutX="63.0" layoutY="93.0" mnemonicParsing="false" onAction="#clicDos" prefHeight="50.0" prefWidth="60.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn0" layoutX="63.0" layoutY="134.0" mnemonicParsing="false" onAction="#clicCero" prefHeight="46.0" prefWidth="115.0" style="-fx-background-color: blue;" text="0" textFill="WHITE" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnPorcentaje" layoutX="63.0" layoutY="174.0" mnemonicParsing="false" onAction="#clicPorcentaje" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: blue;" styleClass="operadores" stylesheets="@../resource/style.css" text="\%" textFill="WHITE" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn9" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#clicNueve" prefHeight="50.0" prefWidth="60.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn6" layoutX="117.0" layoutY="11.0" mnemonicParsing="false" onAction="#clicSeis" prefHeight="50.0" prefWidth="60.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btn3" layoutX="117.0" layoutY="93.0" mnemonicParsing="false" onAction="#clicTres" prefHeight="50.0" prefWidth="60.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnDivision" mnemonicParsing="false" onAction="#clicDivision" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: blue;" styleClass="operadores" stylesheets="@../resource/style.css" text="÷" textFill="WHITE" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnMulti" mnemonicParsing="false" onAction="#clicMulti" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: blue;" styleClass="operadores" stylesheets="@../resource/style.css" text="×" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnResta" mnemonicParsing="false" onAction="#clicResta" prefHeight="45.0" prefWidth="74.0" style="-fx-background-color: blue;" styleClass="operadores" stylesheets="@../resource/style.css" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnSuma" mnemonicParsing="false" onAction="#clicSuma" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: blue;" styleClass="operadores" stylesheets="@../resource/style.css" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnIgual" mnemonicParsing="false" onAction="#clicIgual" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: blue;" styleClass="operadores" stylesheets="@../resource/style.css" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="btnPunto" mnemonicParsing="false" onAction="#clicPunto" prefHeight="50.0" prefWidth="60.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin></Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
